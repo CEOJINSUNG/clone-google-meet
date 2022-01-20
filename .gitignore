@@ -35,3 +35,5 @@ out/
 
 ### VS Code ###
 .vscode/
+구글 클라우드 플랫폼.txt
+src/main/resources/application-oauth.yml
