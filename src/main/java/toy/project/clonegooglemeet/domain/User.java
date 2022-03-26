@@ -22,7 +22,6 @@ public class User extends BaseTime {
     private String email;
     private String picture;
 
-    @NonNull
     @Enumerated(EnumType.STRING)
     private Role role;
 
