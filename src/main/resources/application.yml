@@ -2,7 +2,9 @@ spring:
   profiles:
     include: oauth
   mvc:
-    view:
-      prefix: /WEB-INF/
-      suffix: .jsp
-    static-path-pattern: /resources/**
+    static-path-pattern: /resources/static/**
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    cache: false
+    check-template-location: true
