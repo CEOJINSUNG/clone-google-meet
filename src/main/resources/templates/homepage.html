@@ -1,18 +1,39 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
+    <meta charset="UTF-8">
     <title>Getting Started: Serving Web Content</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="../static/css/header.css" th:href="@{/css/header.css}"/>
+    <link rel="stylesheet" href="../static/css/home.css" th:href="@{/css/home.css}"/>
 </head>
 <body>
-
-<div class="home-page">
-    <div class="header">
-        <div class="logo">
-            <img src="https://www.gstatic.com/meet/google_meet_horizontal_wordmark_2020q4_2x_icon_124_40_292e71bcb52a56e2a9005164118f183b.png" />
-            <span class="help-text">Meet</span>
+    <div class="home-page">
+        <div class="google-header">
+            <div class="google-logo">
+                <img class="google-img" src="https://www.gstatic.com/meet/google_meet_horizontal_wordmark_2020q4_2x_icon_124_40_292e71bcb52a56e2a9005164118f183b.png" />
+                <span class="help-text">Meet</span>
+            </div>
+        </div>
+        <div class="home-row">
+            <div class="home-left-column">
+                <div class="home-title">프리미엄 화상 회의를 이제 누구나 무료로 이용할 수 있습니다</div>
+                <p class="home-subtitle">안전한 비즈니스 회의를 위한 Google Meet 서비스를 누구나 무료로 사용할 수 있도록 다시 설계했습니다.</p>
+                <div class="home-button-input-row">
+                    <div class="home-new-button">새 회의</div>
+                    <input class="home-input" placeholder="코드 또는 링크 입력" />
+                </div>
+                <div style="background-color: #5f6368; height: 0.5px; width: 100%; margin-top: 32px; margin-bottom: 32px;"></div>
+                <div class="home-detail">Google Meet에 관해 <span>
+                    <a style="text-decoration: none;" href="https://support.google.com/meet/?hl=ko&authuser=0#topic=7306097">자세히 알아보세요</a>
+                </span></div>
+            </div>
+            <div class="home-right-column">
+                <img src="https://www.gstatic.com/meet/user_edu_get_a_link_light_90698cd7b4ca04d3005c962a3756c42d.svg" />
+                <div class="share-title">공유 가능한 링크 받기</div>
+                <div class="share-subtitle">새 회의를 클릭하여 회의에 초대할 사용자에게 보낼 링크를 받으세요.</div>
+            </div>
         </div>
     </div>
-</div>
 </body>
 </html>
